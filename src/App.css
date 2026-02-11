@@ -10,13 +10,17 @@ body {
   color: var(--txt-color);
   overflow-x: hidden;
 }
-
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Macondo&display=swap");
+@font-face {
+  font-family: "exbed";
+  src: url("././fonts/Exbed.ttf");
+}
 /* shared styles */
 .a {
   color: var(--txt-color);
   text-decoration: none;
 }
-@import url("https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Macondo&display=swap");
 .cursive {
   font-family: "Edu NSW ACT Cursive" !important;
   font-style: italic;
