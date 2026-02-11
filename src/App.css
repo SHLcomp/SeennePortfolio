@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--main-bg);
+  color: var(--txt-color);
+  overflow-x: hidden;
+}
+
+/* shared styles */
+.a {
+  color: var(--txt-color);
+  text-decoration: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Macondo&display=swap");
+.cursive {
+  font-family: "Edu NSW ACT Cursive" !important;
+  font-style: italic;
+  font-size: xx-small;
+}
+.note {
+  font-family: "Edu NSW ACT Cursive" !important;
+  font-style: italic;
+  font-size: small;
+  color: var(--primary-color);
+  background: var(--light-bg);
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+.txt-glow {
+  filter: drop-shadow(2px 3px 5px var(--primary-color));
+}
+.cta {
+  background: var(--cta-bg);
+  color: var(--txt-color);
+  border: none;
+  padding: 5px 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.noise {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg"); /*flowers*/
+    background: url("https://images.pexels.com/photos/5052331/pexels-photo-5052331.jpeg"); /*water splashes*/
+    background: url("https://images.pexels.com/photos/9783810/pexels-photo-9783810.jpeg"); /*lonely person*/
+    opacity: 0.05;
+    background-size: cover;
+    
+  }
+}
+/* variables */
+:root {
+  --navbar-bg: transparent;
+  --mb-nav-bg: #1a1a1a;
+  --txt-color: white;
+  --medium-bg: #292929;
+  --light-bg: #3c3837;
+  --main-bg: #1a1a1a;
+  --hero-bg: radial-gradient(circle, var(--medium-bg) 0%, var(--main-bg) 100%);
+  --primary-color: #10cac1;
+  --secondary-color: #074540;
+  --accent-color: #0cc6bc;
+  --cta-bg: #0cc6bc;
+  --font-fam: "exbed";
+}
