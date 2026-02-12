@@ -91,7 +91,72 @@
                     font-family: var(--font-fam);
                 }
             }
-            
+
+        }
+    }
+}
+
+
+@media (max-width:600px) {
+    .about {
+        padding-top: 5em;
+
+        .txt {
+            flex-direction: column;
+            padding-bottom: 3em;
+            width: 100vw;
+
+            .txt-info {
+                width: 100vw;
+                padding: 0px;
+                padding-inline: 1em;
+            }
+
+            .img-cont {
+                width: 100vw;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .edu {
+            width: 100vw;
+            padding-inline: 1em;
+
+            .text {
+                width: 100vw;
+                text-align: center;
+                font-size: 1.1em;
+            }
+
+            .edu-cont {
+                height: fit-content;
+                gap: 5em;
+                justify-content: center;
+
+                .edu-item {
+                    flex-direction: column !important;
+
+                    .info {
+                        width: 100vw;
+                        padding-inline: 1em;
+
+                        h3 {
+                            padding-bottom: 1em;
+                        }
+                    }
+
+                    .img-cont {
+                        width: 100vw;
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
         }
     }
 }
