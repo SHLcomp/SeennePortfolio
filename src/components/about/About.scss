@@ -1,0 +1,97 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-top: 13em;
+    justify-content: space-between;
+    height: 200vh;
+
+    .txt {
+        display: flex;
+        // background: pink;
+        justify-content: center;
+        align-items: center;
+
+        .txt-info {
+            width: 50vw;
+            padding-inline: 2em;
+            font-size: 1.5em;
+
+            h1 {
+                padding-block: 2vh;
+                font-family: var(--font-fam);
+            }
+        }
+    }
+
+    .edu {
+        // background: green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15vw;
+
+        .text {
+            font-family: var(--font-fam);
+            font-size: 1.5em;
+
+        }
+
+        .edu-cont {
+            display: flex;
+            flex-direction: column;
+            padding-top: 10vh;
+            height: 110vh;
+            justify-content: space-between;
+
+            .edu-item {
+                display: flex;
+                // width: 70vw;
+                justify-content: space-between;
+                gap: 2em;
+                align-items: center;
+
+                &:nth-child(1) {
+                    flex-direction: row-reverse;
+                }
+
+                h3 {
+                    font-family: var(--font-fam);
+                    color: var(--primary-color);
+                }
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50vw;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    .cer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        align-items: center;
+        margin-top: 15vw;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            font-size: 1.5em;
+
+            .title {
+                h2 {
+                    font-size: 1.5em;
+                    font-family: var(--font-fam);
+                }
+            }
+            
+        }
+    }
+}

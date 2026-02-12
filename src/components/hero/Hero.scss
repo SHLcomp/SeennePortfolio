@@ -21,34 +21,42 @@
             flex-direction: column;
             gap: 10px;
             z-index: 200;
+
             h1 {
                 font-family: var(--font-fam);
                 font-size: 2.3em;
             }
         }
-        .img{
+
+        .img {
             width: 60vw;
             position: absolute;
             z-index: 1;
             opacity: .3;
+            pointer-events: none;
             // transform: rotate(25deg); //I will use gsap for this :)
-            img{
+
+            img {
                 width: 100%;
+                pointer-events: none
             }
         }
-        .info{
+
+        .info {
             z-index: 200 !important;
-            p{
+
+            p {
                 width: 50%;
             }
         }
     }
-    
+
     .name {
         display: flex;
         justify-content: center;
         z-index: 200 !important;
         position: relative;
+
         h1 {
             font-size: 17em;
             font-family: var(--font-fam);
@@ -57,13 +65,14 @@
 }
 
 @media (max-width:600px) {
-    .hero{
+    .hero {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0;
         padding-top: 10vh;
-        .txt{
+
+        .txt {
             padding-left: 0;
             padding-inline: 2em;
             flex-direction: column;
@@ -71,22 +80,27 @@
             align-items: center !important;
             margin-top: 0;
             gap: 1em;
-            .title{
+
+            .title {
                 width: 100%;
-                h1{
+
+                h1 {
                     font-size: clamp(20px, 2em, 2.3em);
                 }
             }
-            .info{
-                p{
+
+            .info {
+                p {
                     width: 100%;
                 }
             }
         }
-        .name{
+
+        .name {
             position: relative;
             top: -5vh;
-            h1{
+
+            h1 {
                 font-size: 5em;
             }
         }

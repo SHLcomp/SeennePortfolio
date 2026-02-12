@@ -21,6 +21,9 @@ body {
   color: var(--txt-color);
   text-decoration: none;
 }
+.link {
+  color: var(--accent-color);
+}
 .cursive {
   font-family: "Edu NSW ACT Cursive" !important;
   font-style: italic;
@@ -61,7 +64,22 @@ body {
     background: url("https://images.pexels.com/photos/9783810/pexels-photo-9783810.jpeg"); /*lonely person*/
     opacity: 0.05;
     background-size: cover;
-    
+  }
+}
+.line-effect {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content; /*idk bou it*/
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 90%;
+    margin-top: 1vh;
+    background: var(--primary-color);
+    height: 2px;
   }
 }
 /* variables */
