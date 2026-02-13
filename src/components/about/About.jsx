@@ -2,18 +2,117 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./About.scss";
 import img from "../../assets/laptop.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 
 const About = () => {
+
+  useGSAP(() => {
+
+  // ABOUT HERO TIMELINE
+  const heroTL = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".about .txt",
+      start: "top 70%",
+      toggleActions: "play none none reverse"
+    }
+  });
+
+  heroTL
+    .from(".note", {
+      opacity: 0,
+      y: 40,
+      duration: 0.8,
+      delay: .5,
+      ease: "power3.out"
+    })
+    .from(".txt-info h1", {
+      opacity: 0,
+      x: -80,
+      duration: 1,
+      ease: "power4.out"
+    }, "-=0.4")
+
+    .from(".txt-info p", {
+      opacity: 0,
+      y: 40,
+      stagger: 0.2,
+      duration: 0.8,
+      ease: "power3.out"
+    }, "-=0.6")
+
+    .from(".img-cont img", {
+      opacity: 0,
+      scale: 0.8,
+      rotate: 4,
+      duration: 1.2,
+      ease: "power4.out"
+    }, "-=0.8");
+
+
+
+  // FLOATING IMAGE PARALLAX
+  gsap.to(".img-cont img", {
+    y: 40,
+    scrollTrigger: {
+      trigger: ".about",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true
+    }
+  });
+
+
+
+  // EDUCATION TITLE REVEAL
+  gsap.from(".edu .text", {
+    opacity: 0,
+    y: 80,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".edu",
+      start: "top 75%"
+    }
+  });
+
+
+
+  // EDUCATION CARDS REVEAL
+  gsap.from(".item1", {
+    opacity: 0,
+    y: 100,
+    stagger: 0.3,
+    duration: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".edu-cont",
+      start: "top 75%"
+    }
+  });
+
+  gsap.from(".item2", {
+    opacity: 0,
+    y: 100,
+    stagger: 0.3,
+    duration: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".edu-cont",
+      start: "65% 30%",
+    }
+  });
+
+
+
+
+});
+
+
+
   return (
     <div className="about">
-
-
-
-      <div className="extras">
-
-      </div>
-
-
+      <div className="extras"></div>
 
       <div className="txt">
         <div className="txt-info">
@@ -25,15 +124,15 @@ const About = () => {
           </p>
           <p>
             Web development is both my passion and profession. I work as a
-            freelancer on different platforms as
+            freelancer on different platforms as {""}
             <a href="#" className="link">
               Fiverr
             </a>
-            ,
+            ,{" "}
             <a href="#" className="link">
               Upwork
             </a>
-            , and
+            , and{" "}
             <a href="#" className="link">
               Freelancer
             </a>
@@ -50,7 +149,7 @@ const About = () => {
         </div>
 
         <div className="edu-cont">
-          <div className="edu-item">
+          <div className="edu-item item1">
             <div className="info">
               <h3>My Journey</h3>
               <p>
@@ -66,7 +165,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="edu-item">
+          <div className="edu-item item2">
             <div className="info">
               <h3>Academic Education</h3>
               <p>
@@ -91,6 +190,9 @@ const About = () => {
                 </a>
                 , which was a great jump in my eductational path!
               </p>
+              <div className="cta-cont">
+                <a className="cta a" href="#">Read more</a>
+              </div>
             </div>
             <div className="img-cont">
               <img src={img} alt="" />

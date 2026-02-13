@@ -46,19 +46,19 @@ const Hero = () => {
       opacity: 0,
       y: 50,
       duration: 2,
-      delay: 3,
+      delay: 1.5,
       ease: "back.out(1.7)",
     });
 
     gsap.to(".txt .img", {
       transform: "rotate(15deg)",
       duration: 2,
-      delay:1
+      // delay:1
     })
     gsap.from(".txt .img",{
       opacity:0,
       duration:1,
-      delay:1,
+      delay:.7,
     });
   });
   return (
