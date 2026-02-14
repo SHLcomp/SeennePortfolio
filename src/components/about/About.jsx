@@ -8,7 +8,7 @@ import gsap from "gsap";
 const About = () => {
   useGSAP(() => {
     // ABOUT HERO TIMELINE
-    const heroTL = gsap.timeline({
+    const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".about .txt",
         start: "top 70%",
@@ -16,20 +16,19 @@ const About = () => {
       },
     });
 
-    heroTL
-      .from(".note", {
-        opacity: 0,
-        y: 40,
-        duration: 0.8,
-        delay: 0.5,
-        ease: "power3.out",
-      })
+    tl.from(".note", {
+      opacity: 0,
+      y: 40,
+      duration: 0.5,
+      delay: 0.5,
+      ease: "power3.out",
+    })
       .from(
         ".txt-info h1",
         {
           opacity: 0,
           x: -80,
-          duration: 1,
+          duration: .8,
           ease: "power4.out",
         },
         "-=0.4",
@@ -66,7 +65,6 @@ const About = () => {
         trigger: ".about",
         start: "top bottom",
         end: "bottom top",
-        scrub: true,
       },
     });
 
@@ -81,29 +79,20 @@ const About = () => {
       },
     });
 
-    // EDUCATION CARDS REVEAL
-    gsap.from(".item1", {
-      opacity: 0,
-      y: 100,
-      stagger: 0.3,
-      duration: 1,
-      ease: "power3.out",
+    const eduTL = gsap.timeline({
       scrollTrigger: {
         trigger: ".edu-cont",
-        start: "top 75%",
+        start: "top 70%",
+        end: "bottom 60%",
+        scrub: 1,
       },
     });
 
-    gsap.from(".item2", {
+    eduTL.from(".edu-item", {
       opacity: 0,
-      y: 100,
-      stagger: 0.3,
-      duration: 1,
+      y: 300,
+      stagger: 0.4,
       ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".edu-cont",
-        start: "50% 30%",
-      },
     });
   });
 
@@ -152,14 +141,16 @@ const About = () => {
               <p>
                 I am a self-learner, I have learned everything I know from
                 scratch ever since I was 15 years old, I received a scholarship
-                from <span>Al Hussein Technical University</span>  because of my
-                programming and self-learning skills. Also I have obtained 6
-                different certifications in programming, including
-                certifications of: <br /> Frontend responsive web design and full stack
-                web development. <br /> I learned from reading books, following
-                professional developers, and attending online boot camps!
-                Simultaneously, building and selling web apps, gaining
-                experience and getting to deal with different mindsets.
+                from <span>Al Hussein Technical University</span> because of my
+                programming and self-learning skills. <br />
+                <br />
+                Also I have obtained 6 different certifications in programming,
+                including certifications of: <br /> Frontend responsive web
+                design and full stack web development. <br />
+                <br /> I learned from reading books, following professional
+                developers, and attending online boot camps! Simultaneously,
+                building and selling web apps, gaining experience and getting to
+                deal with different mindsets.
               </p>
               <div className="cta-cont">
                 <a className="cta a" href="#">
@@ -186,8 +177,14 @@ const About = () => {
                 </a>
                 .
               </p>
+              <br />
               <p>
-                I recieved a scholarship on the{" "}
+                In my university I was introduced to different learning camps
+                that I attended, which was a great jump in my educational
+                journey.
+                <br />
+                <br />
+                Later, I recieved a scholarship on the{" "}
                 <a href="#" className="link">
                   HTUx
                 </a>{" "}
@@ -195,9 +192,9 @@ const About = () => {
                 <a href="#" className="link">
                   HTU - Al Hussein Technical University
                 </a>
-                , which was a great jump in my eductational path!
+                , which was a great jump in my eductational journey!
+                <br /> I got the oppurtinity to learn from a technical
               </p>
-              
             </div>
             <div className="img-cont">
               <img src={img} alt="" />

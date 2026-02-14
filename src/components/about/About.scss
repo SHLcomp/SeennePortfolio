@@ -41,7 +41,7 @@
             display: flex;
             flex-direction: column;
             padding-top: 10vh;
-            height: 110vh;
+            height: 140vh;
             justify-content: space-between;
 
             .edu-item {
@@ -50,17 +50,33 @@
                 justify-content: space-between;
                 gap: 2em;
                 align-items: center;
+                position: relative;
+                padding-bottom: 4em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    width: 80%;
+                    height: 3px;
+                    background: white;
+                }
 
                 &:nth-child(1) {
                     flex-direction: row-reverse;
+
                 }
 
                 h3 {
                     font-family: var(--font-fam);
                     color: var(--primary-color);
                 }
-                p{
-                    span{
+
+                p {
+                    span {
                         color: var(--primary-color);
                     }
                 }
@@ -71,7 +87,8 @@
                     width: 50vw;
                     font-size: 1.5em;
                 }
-                .cta-cont{
+
+                .cta-cont {
                     margin-top: 1em;
                 }
             }
