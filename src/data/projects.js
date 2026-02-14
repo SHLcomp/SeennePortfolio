@@ -18,6 +18,7 @@ const projects = [
     img:img2,
     demo: "https://lou-2.vercel.app/",
   },
+  
 ];
 
 export default projects;

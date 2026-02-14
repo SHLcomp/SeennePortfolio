@@ -26,7 +26,7 @@ const Project = () => {
               </div>
 
               <a href={project.demo} className="cta a">
-                View Project
+                View Online
               </a>
             </div>
           </div>
