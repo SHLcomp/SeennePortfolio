@@ -41,7 +41,7 @@ body {
 }
 .cursive {
   font-family: "Edu NSW ACT Cursive" !important;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: xx-small;
 }
 .note {
