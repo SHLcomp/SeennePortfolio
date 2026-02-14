@@ -3,7 +3,7 @@ import "./Navbar.scss";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const [menu, setMenu] = useState("home");
+  const [menu, setMenu] = useState("");
   const [open, setOpen] = useState(false);
   const locate = useLocation();
   useEffect(() => {
@@ -14,7 +14,7 @@ const Navbar = () => {
       case "/about":
         setMenu("about");
         break;
-      case "/designs":
+      case "/designs/:projId/":
         setMenu("designs");
         break;
       case "/contact":

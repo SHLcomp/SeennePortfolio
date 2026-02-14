@@ -1,12 +1,9 @@
 import React from "react";
 import "./Designs.scss";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import projects from '../../data/projects.js'
+import { Link } from "react-router-dom";
+import Project from "../project/Project.jsx";
 
 const Designs = () => {
-
-
   return (
     <section className="designs" id="designs">
       <div className="text">
@@ -16,28 +13,7 @@ const Designs = () => {
       </div>
 
       <div className="projects">
-        {projects.map((project, index) => (
-          <div className="card" key={index}>
-            <div className="img">
-              <img src={project.img} alt={project.title} />
-            </div>
-
-            <div className="info">
-              <h2>{project.title}</h2>
-              <p>{project.desc}</p>
-
-              <div className="tech">
-                {project.tech.map((t, i) => (
-                  <span key={i}>{t}</span>
-                ))}
-              </div>
-
-              <a href={project.demo} className="cta a">
-                View Project
-              </a>
-            </div>
-          </div>
-        ))}
+        <Project />
       </div>
     </section>
   );
