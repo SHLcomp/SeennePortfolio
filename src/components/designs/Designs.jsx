@@ -8,7 +8,7 @@ const Designs = () => {
 
 
   return (
-    <section className="designs">
+    <section className="designs" id="designs">
       <div className="text">
         <span className="note">Projects & Case Studies</span>
         <h1>Designs That Turn Ideas Into Experiences</h1>

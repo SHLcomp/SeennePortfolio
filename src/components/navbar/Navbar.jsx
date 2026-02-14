@@ -31,11 +31,11 @@ const Navbar = () => {
         <Link className="a" to={"/"}>
           <li className={menu === "home" ? "active" : ""}>Home</li>
         </Link>
+        <a href="#designs" className="a">
+          <li className={menu === "designs" ? "active" : ""}>Designs</li>
+        </a>
         <Link to={"/about"} className="a">
           <li className={menu === "about" ? "active" : ""}>About</li>
-        </Link>
-        <Link className="a" to={"/designs"}>
-          <li className={menu === "designs" ? "active" : ""}>Designs</li>
         </Link>
         <Link className="a" to={"/contact"}>
           <li className={menu === "contact" ? "active" : ""}>Contact</li>

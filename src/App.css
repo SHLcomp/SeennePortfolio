@@ -65,6 +65,19 @@ body {
   margin-top: 20px;
   cursor: pointer;
 }
+.cta2 {
+  background: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 8px 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.8s;
+  &:hover {
+    background: var(--primary-color);
+    color: var(--txt-color);
+  }
+}
 .noise {
   position: relative;
   &::after {

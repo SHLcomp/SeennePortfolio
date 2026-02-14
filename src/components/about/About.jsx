@@ -158,7 +158,7 @@ const About = () => {
               </p>
 
               <div className="cta-cont">
-                <a className="cta a" href="#">
+                <a className="cta2 a" href="#">
                   Read more
                 </a>
               </div>

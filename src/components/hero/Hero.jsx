@@ -76,7 +76,7 @@ const Hero = () => {
             Bringing your ideas to life! Creating stunning, modern websites
             for your online presence!! <br /> Ready?
           </p>
-          <button className="cta">Contact Now</button>
+          <button className="cta2">Contact Now</button>
         </div>
       </div>
       <div className="name">
