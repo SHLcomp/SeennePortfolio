@@ -168,11 +168,11 @@ const About = () => {
               <h3>Academic Education</h3>
               <p>
                 I am currently a student at the{" "}
-                <a href="#" className="link">
+                <a href="https://www.meu.edu.jo/" className="link">
                   MEU - Middle East University
                 </a>
                 , studying{" "}
-                <a href="#" className="link">
+                <a href="https://www.meu.edu.jo/faculties/faculty-of-engineering/intelligent-systems-engineering/" className="link">
                   Intelligent Systems Engineering
                 </a>
                 .
@@ -185,11 +185,11 @@ const About = () => {
                 <br />
                 <br />
                 Later, I recieved a scholarship on the{" "}
-                <a href="#" className="link">
+                <a href="https://htux.org/" className="link">
                   HTUx
                 </a>{" "}
                 platform from{" "}
-                <a href="#" className="link">
+                <a href="https://www.htu.edu.jo/" className="link">
                   HTU - Al Hussein Technical University
                 </a>
                 , which was a great jump in my eductational journey!
