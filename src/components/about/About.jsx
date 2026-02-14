@@ -28,7 +28,7 @@ const About = () => {
         {
           opacity: 0,
           x: -80,
-          duration: .8,
+          duration: 0.8,
           ease: "power4.out",
         },
         "-=0.4",
@@ -110,7 +110,7 @@ const About = () => {
           </p>
           <p>
             Web development is both my passion and profession. I work as a
-            freelancer on different platforms as {""}
+            freelancer on several platforms, including {""}
             <a href="#" className="link">
               Fiverr
             </a>
@@ -139,19 +139,24 @@ const About = () => {
             <div className="info">
               <h3>My Journey</h3>
               <p>
-                I am a self-learner, I have learned everything I know from
-                scratch ever since I was 15 years old, I received a scholarship
-                from <span>Al Hussein Technical University</span> because of my
-                programming and self-learning skills. <br />
+                I am a self-learner who has built my skills from scratch since
+                the age of 15. I received a scholarship from{" "}
+                <span>Al Hussein Technical University</span>
+                because of my programming abilities and self-learning
+                dedication.
                 <br />
-                Also I have obtained 6 different certifications in programming,
-                including certifications of: <br /> Frontend responsive web
-                design and full stack web development. <br />
-                <br /> I learned from reading books, following professional
-                developers, and attending online boot camps! Simultaneously,
-                building and selling web apps, gaining experience and getting to
-                deal with different mindsets.
+                <br />
+                I have also obtained six certifications in programming,
+                including certifications in frontend responsive web design and
+                full-stack web development.
+                <br />
+                <br />I developed my skills by reading books, following
+                professional developers, attending online boot camps, and
+                building real-world web applications. Through freelancing, I
+                gained valuable experience working with clients and adapting to
+                different project requirements and mindsets.
               </p>
+
               <div className="cta-cont">
                 <a className="cta a" href="#">
                   Read more
@@ -172,19 +177,24 @@ const About = () => {
                   MEU - Middle East University
                 </a>
                 , studying{" "}
-                <a href="https://www.meu.edu.jo/faculties/faculty-of-engineering/intelligent-systems-engineering/" className="link">
+                <a
+                  href="https://www.meu.edu.jo/faculties/faculty-of-engineering/intelligent-systems-engineering/"
+                  className="link"
+                >
                   Intelligent Systems Engineering
                 </a>
                 .
               </p>
+
               <br />
+
               <p>
-                In my university I was introduced to different learning camps
-                that I attended, which was a great jump in my educational
-                journey.
+                During my university studies, I participated in several
+                technical learning camps, which significantly enhanced my
+                educational journey.
                 <br />
                 <br />
-                Later, I recieved a scholarship on the{" "}
+                Later, I received a scholarship on the{" "}
                 <a href="https://htux.org/" className="link">
                   HTUx
                 </a>{" "}
@@ -192,8 +202,9 @@ const About = () => {
                 <a href="https://www.htu.edu.jo/" className="link">
                   HTU - Al Hussein Technical University
                 </a>
-                , which was a great jump in my eductational journey!
-                <br /> I got the oppurtinity to learn from a technical
+                . This opportunity allowed me to learn from experienced
+                technical professionals and further strengthen my development
+                skills.
               </p>
             </div>
             <div className="img-cont">

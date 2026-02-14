@@ -73,7 +73,7 @@ const Hero = () => {
         </div>
         <div className="info">
           <p>
-            Bringing your ideas into life! Creating stunning, modern websites
+            Bringing your ideas to life! Creating stunning, modern websites
             for your online presence!! <br /> Ready?
           </p>
           <button className="cta">Contact Now</button>
