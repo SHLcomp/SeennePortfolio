@@ -35,7 +35,6 @@
         .text {
             font-family: var(--font-fam);
             font-size: 1.5em;
-
         }
 
         .edu-cont {
@@ -60,12 +59,20 @@
                     font-family: var(--font-fam);
                     color: var(--primary-color);
                 }
+                p{
+                    span{
+                        color: var(--primary-color);
+                    }
+                }
 
                 .info {
                     display: flex;
                     flex-direction: column;
                     width: 50vw;
                     font-size: 1.5em;
+                }
+                .cta-cont{
+                    margin-top: 1em;
                 }
             }
         }
@@ -144,7 +151,7 @@
                         padding-inline: 1em;
 
                         h3 {
-                            padding-bottom: 1em;
+                            padding-bottom: 10px;
                         }
                     }
 

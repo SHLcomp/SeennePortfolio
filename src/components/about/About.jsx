@@ -5,110 +5,107 @@ import img from "../../assets/laptop.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-
 const About = () => {
-
   useGSAP(() => {
+    // ABOUT HERO TIMELINE
+    const heroTL = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".about .txt",
+        start: "top 70%",
+        toggleActions: "play none none reverse",
+      },
+    });
 
-  // ABOUT HERO TIMELINE
-  const heroTL = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".about .txt",
-      start: "top 70%",
-      toggleActions: "play none none reverse"
-    }
-  });
+    heroTL
+      .from(".note", {
+        opacity: 0,
+        y: 40,
+        duration: 0.8,
+        delay: 0.5,
+        ease: "power3.out",
+      })
+      .from(
+        ".txt-info h1",
+        {
+          opacity: 0,
+          x: -80,
+          duration: 1,
+          ease: "power4.out",
+        },
+        "-=0.4",
+      )
 
-  heroTL
-    .from(".note", {
-      opacity: 0,
+      .from(
+        ".txt-info p",
+        {
+          opacity: 0,
+          y: 40,
+          stagger: 0.2,
+          duration: 0.8,
+          ease: "power3.out",
+        },
+        "-=0.6",
+      )
+
+      .from(
+        ".img-cont img",
+        {
+          opacity: 0,
+          scale: 0.8,
+          rotate: 4,
+          duration: 1.2,
+          ease: "power4.out",
+        },
+        "-=0.8",
+      );
+
+    // FLOATING IMAGE PARALLAX
+    gsap.to(".img-cont img", {
       y: 40,
-      duration: 0.8,
-      delay: .5,
-      ease: "power3.out"
-    })
-    .from(".txt-info h1", {
+      scrollTrigger: {
+        trigger: ".about",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+
+    // EDUCATION TITLE REVEAL
+    gsap.from(".edu .text", {
       opacity: 0,
-      x: -80,
+      y: 80,
       duration: 1,
-      ease: "power4.out"
-    }, "-=0.4")
+      scrollTrigger: {
+        trigger: ".edu",
+        start: "top 75%",
+      },
+    });
 
-    .from(".txt-info p", {
+    // EDUCATION CARDS REVEAL
+    gsap.from(".item1", {
       opacity: 0,
-      y: 40,
-      stagger: 0.2,
-      duration: 0.8,
-      ease: "power3.out"
-    }, "-=0.6")
+      y: 100,
+      stagger: 0.3,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".edu-cont",
+        start: "top 75%",
+      },
+    });
 
-    .from(".img-cont img", {
+    gsap.from(".item2", {
       opacity: 0,
-      scale: 0.8,
-      rotate: 4,
-      duration: 1.2,
-      ease: "power4.out"
-    }, "-=0.8");
-
-
-
-  // FLOATING IMAGE PARALLAX
-  gsap.to(".img-cont img", {
-    y: 40,
-    scrollTrigger: {
-      trigger: ".about",
-      start: "top bottom",
-      end: "bottom top",
-      scrub: true
-    }
+      y: 100,
+      stagger: 0.3,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".edu-cont",
+        start: "50% 30%",
+      },
+    });
   });
-
-
-
-  // EDUCATION TITLE REVEAL
-  gsap.from(".edu .text", {
-    opacity: 0,
-    y: 80,
-    duration: 1,
-    scrollTrigger: {
-      trigger: ".edu",
-      start: "top 75%"
-    }
-  });
-
-
-
-  // EDUCATION CARDS REVEAL
-  gsap.from(".item1", {
-    opacity: 0,
-    y: 100,
-    stagger: 0.3,
-    duration: 1,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: ".edu-cont",
-      start: "top 75%"
-    }
-  });
-
-  gsap.from(".item2", {
-    opacity: 0,
-    y: 100,
-    stagger: 0.3,
-    duration: 1,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: ".edu-cont",
-      start: "65% 30%",
-    }
-  });
-
-
-
-
-});
-
-
 
   return (
     <div className="about">
@@ -153,12 +150,22 @@ const About = () => {
             <div className="info">
               <h3>My Journey</h3>
               <p>
-                I started my educational journey at 2019, as a self-learner. I
-                learned from reading books, following professional developers,
-                and attending online boot camps! Simultaneously, building and
-                selling web apps, gaining experience and getting to deal with
-                different mindsets.
+                I am a self-learner, I have learned everything I know from
+                scratch ever since I was 15 years old, I received a scholarship
+                from <span>Al Hussein Technical University</span>  because of my
+                programming and self-learning skills. Also I have obtained 6
+                different certifications in programming, including
+                certifications of: <br /> Frontend responsive web design and full stack
+                web development. <br /> I learned from reading books, following
+                professional developers, and attending online boot camps!
+                Simultaneously, building and selling web apps, gaining
+                experience and getting to deal with different mindsets.
               </p>
+              <div className="cta-cont">
+                <a className="cta a" href="#">
+                  Read more
+                </a>
+              </div>
             </div>
             <div className="img-cont">
               <img src={img} alt="" />
@@ -180,7 +187,7 @@ const About = () => {
                 .
               </p>
               <p>
-                I won a scholarship on the{" "}
+                I recieved a scholarship on the{" "}
                 <a href="#" className="link">
                   HTUx
                 </a>{" "}
@@ -190,9 +197,7 @@ const About = () => {
                 </a>
                 , which was a great jump in my eductational path!
               </p>
-              <div className="cta-cont">
-                <a className="cta a" href="#">Read more</a>
-              </div>
+              
             </div>
             <div className="img-cont">
               <img src={img} alt="" />
