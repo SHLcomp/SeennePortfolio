@@ -25,7 +25,7 @@ const Project = () => {
                 ))}
               </div>
 
-              <a href={project.demo} className="cta a">
+              <a href={project.demo} className="cta a" target="_blank">
                 View Online
               </a>
             </div>

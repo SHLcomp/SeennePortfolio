@@ -5,6 +5,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import { useGSAP } from "@gsap/react";
 import img from "../../assets/laptop.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   useGSAP(() => {
@@ -76,7 +77,7 @@ const Hero = () => {
             Bringing your ideas to life! Creating stunning, modern websites
             for your online presence!! <br /> Ready?
           </p>
-          <button className="cta2">Contact Now</button>
+          <Link to={"/contact"}><button className="cta2">Contact Now</button></Link>
         </div>
       </div>
       <div className="name">

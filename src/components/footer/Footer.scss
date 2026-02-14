@@ -8,11 +8,12 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3em;
+    // font-family: var(--font-fam);
   }
 
   h2 {
     font-family: var(--font-fam);
-    color: var(--primary-color);
+    // color: var(--primary-color);
     margin-bottom: 10px;
   }
 

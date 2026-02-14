@@ -58,6 +58,11 @@ const Contact = () => {
           </div>
 
           <div className="input-group">
+            <input type="number" required />
+            <label>Phone Number</label>
+          </div>
+
+          <div className="input-group">
             <textarea rows="5" required></textarea>
             <label>Message</label>
           </div>

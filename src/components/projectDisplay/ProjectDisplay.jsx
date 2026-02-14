@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../navbar/Navbar";
 import "./ProjectDisplay.scss";
+import { useLocation } from "react-router-dom";
 
 const ProjectDisplay = ({proj}) => {
 
+  const {pathname} = useLocation();
+   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant" // or "smooth" if you want animation
+    });
+  }, [pathname]);
 
   return (
     <>
