@@ -72,7 +72,7 @@ body {
   padding: 8px 15px;
   margin-top: 20px;
   cursor: pointer;
-  transition: 0.8s;
+  transition: background 0.8s, color 0.8s; /* instead of transition:0.8s; because it makes the whole .cta2 disappear with GSAP :) */
   &:hover {
     background: var(--primary-color);
     color: var(--txt-color);
@@ -80,6 +80,7 @@ body {
 }
 .noise {
   position: relative;
+  z-index: 0;
   &::after {
     content: "";
     position: absolute;
@@ -92,6 +93,7 @@ body {
     background: url("https://images.pexels.com/photos/9783810/pexels-photo-9783810.jpeg"); /*lonely person*/
     opacity: 0.05;
     background-size: cover;
+    z-index: -1;
   }
 }
 .line-effect {
