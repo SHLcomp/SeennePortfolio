@@ -72,7 +72,9 @@ body {
   padding: 8px 15px;
   margin-top: 20px;
   cursor: pointer;
-  transition: background 0.8s, color 0.8s; /* instead of transition:0.8s; because it makes the whole .cta2 disappear with GSAP :) */
+  transition:
+    background 0.8s,
+    color 0.8s; /* instead of transition:0.8s; because it makes the whole .cta2 disappear with GSAP :) */
   &:hover {
     background: var(--primary-color);
     color: var(--txt-color);
