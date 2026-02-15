@@ -5,14 +5,17 @@
   padding-top: 13em;
   justify-content: space-between;
   min-height: 100vh;
+
   // height: 100vh;
   // height: fit-content;
-  .img-cont{
-            max-width: 40vw !important;
-            img{
-                width: 100% !important;
-            }
-        }
+  .img-cont {
+    width: 40vw !important;
+
+    img {
+      width: 100% !important;
+      border-radius: 40px;
+    }
+  }
 
   .txt {
     display: flex;
@@ -119,7 +122,7 @@
       font-size: 1.5em;
       text-align: center;
       justify-content: center;
-        align-items: center;
+      align-items: center;
 
       .title {
         h2 {
@@ -195,6 +198,14 @@
   .about-page {
     padding-top: 10em;
 
+    .img-cont {
+      width: 90vw !important;
+
+      img {
+        width: 100%;
+      }
+    }
+
     .txt {
       flex-direction: column;
       padding-bottom: 3em;
@@ -206,13 +217,6 @@
         padding-inline: 1em;
       }
 
-      .img-cont {
-        width: 100vw;
-
-        img {
-          width: 100%;
-        }
-      }
     }
 
     .edu {
@@ -306,7 +310,7 @@
           .info {
             width: 55vw;
             font-size: 1.2em;
-        padding-inline: 2em !important;
+            padding-inline: 2em !important;
           }
 
           .img-cont {
@@ -402,4 +406,3 @@
     }
   }
 }
-

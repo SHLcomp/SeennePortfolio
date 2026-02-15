@@ -9,13 +9,16 @@
     height: fit-content;
 
     .img-cont {
-        max-width: 30vw !important;
+        width: 30vw !important;
 
         img {
             width: 100% !important;
-            &:nth-child(1){
+
+            border-radius: 40px;
+
+            &:nth-child(1) {
                 transform: rotateY(180deg) !important;
-                filter: drop-shadow(2px 4px 30px var(--primary-color));
+                filter: drop-shadow(10px 10px 30px var(--primary-color));
             }
         }
     }
@@ -141,6 +144,14 @@
     .about {
         padding-top: 5em;
 
+        .img-cont {
+            width: 90vw !important;
+
+            img {
+                width: 100%;
+            }
+        }
+
         .txt {
             flex-direction: column;
             padding-bottom: 3em;
@@ -152,13 +163,7 @@
                 padding-inline: 1em;
             }
 
-            .img-cont {
-                width: 100vw;
 
-                img {
-                    width: 100%;
-                }
-            }
         }
 
         .edu {
