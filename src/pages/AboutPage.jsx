@@ -3,7 +3,9 @@ import { useLocation } from "react-router-dom";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import "./AboutPage.scss";
-import img from "../assets/laptop.png";
+import img3 from "../assets/bg2.jpg";
+import img2 from "../assets/lp2.jpg";
+import img1 from "../assets/laptop.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -79,7 +81,7 @@ const AboutPage = () => {
           </p>
         </div>
         <div className="img-cont">
-          <img src={img} alt="Seenne coding" />
+          <img src={img1} alt="Seenne coding" />
         </div>
       </div>
 
@@ -110,7 +112,7 @@ const AboutPage = () => {
                 different project requirements and mindsets.
               </p>
             </div>
-            <div className="img-cont"><img src={img} alt="Learning" /></div>
+            <div className="img-cont"><img src={img2} alt="Learning" /></div>
           </div>
 
           <div className="edu-item item2">
@@ -152,7 +154,7 @@ const AboutPage = () => {
                 skills.
               </p>
             </div>
-            <div className="img-cont"><img src={img} alt="Academic" /></div>
+            <div className="img-cont"><img src={img3} alt="Academic" /></div>
           </div>
         </div>
       </div>

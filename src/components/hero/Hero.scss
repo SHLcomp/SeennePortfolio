@@ -3,18 +3,14 @@
     height: 100vh;
     background: var(--hero-bg);
     padding-top: 10vh;
-     /* Smooth bottom fade */
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        black 75%,
-        transparent 100%
-    );
+    /* Smooth bottom fade */
+    -webkit-mask-image: linear-gradient(to bottom,
+            black 75%,
+            transparent 100%);
 
-    mask-image: linear-gradient(
-        to bottom,
-        black 75%,
-        transparent 100%
-    );
+    mask-image: linear-gradient(to bottom,
+            black 75%,
+            transparent 100%);
 
     .txt {
         display: flex;
@@ -50,7 +46,9 @@
 
             img {
                 width: 100%;
-                pointer-events: none
+                pointer-events: none;
+                mix-blend-mode: color-burn;
+                background: transparent;
             }
         }
 
@@ -60,7 +58,7 @@
             p {
                 width: 50%;
             }
-           
+
         }
     }
 
@@ -124,49 +122,49 @@
 /* ================= TABLET ================= */
 @media (max-width: 1024px) and (min-width:601px) {
 
-  .hero {
+    .hero {
 
-    padding-top: 8vh;
+        padding-top: 8vh;
 
-    .txt {
-      padding-left: 10vw;
-      margin-top: 10vh;
-      padding-block: 6vh;
+        .txt {
+            padding-left: 10vw;
+            margin-top: 10vh;
+            padding-block: 6vh;
 
-      /* HERO TITLE */
-      .title {
-        width: 40%;
+            /* HERO TITLE */
+            .title {
+                width: 40%;
 
-        h1 {
-          font-size: 2em;
+                h1 {
+                    font-size: 2em;
+                }
+            }
+
+            /* LAPTOP IMAGE */
+            .img {
+                width: 70vw;
+                opacity: 0.25;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            /* INFO TEXT */
+            .info {
+                p {
+                    width: 70%;
+                    font-size: 0.95em;
+                }
+            }
         }
-      }
 
-      /* LAPTOP IMAGE */
-      .img {
-        width: 70vw;
-        opacity: 0.25;
+        /* HUGE BACKGROUND NAME */
+        .name {
 
-        img {
-          width: 100%;
+            h1 {
+                font-size: 10em;
+            }
         }
-      }
-
-      /* INFO TEXT */
-      .info {
-        p {
-          width: 70%;
-          font-size: 0.95em;
-        }
-      }
     }
-
-    /* HUGE BACKGROUND NAME */
-    .name {
-
-      h1 {
-        font-size: 10em;
-      }
-    }
-  }
 }

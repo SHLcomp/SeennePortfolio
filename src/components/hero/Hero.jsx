@@ -52,7 +52,7 @@ const Hero = () => {
     });
 
     gsap.to(".txt .img", {
-      transform: "rotate(15deg)",
+      transform: "scale(1.1) rotate(15deg)",
       duration: 2,
       // delay:1
     })

@@ -7,6 +7,12 @@
   min-height: 100vh;
   // height: 100vh;
   // height: fit-content;
+  .img-cont{
+            max-width: 40vw !important;
+            img{
+                width: 100% !important;
+            }
+        }
 
   .txt {
     display: flex;
@@ -57,6 +63,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-block: 2em;
 
         &::after {
           content: "";

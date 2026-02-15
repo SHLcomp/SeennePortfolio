@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./About.scss";
-import img from "../../assets/laptop.png";
+import img2 from "../../assets/workplace.png";
+import img3 from "../../assets/lp.png";
+import img from "../../assets/keyboard.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -107,7 +109,7 @@ const About = () => {
           </p>
         </div>
         <div className="img-cont">
-          <img src={img} alt="Seenne coding" />
+          <img src={img3} alt="Seenne coding" />
         </div>
       </div>
 
@@ -138,7 +140,7 @@ const About = () => {
               </div>
             </div>
             <div className="img-cont">
-              <img src={img} alt="Coding journey" />
+              <img src={img2} alt="Coding journey" />
             </div>
           </div>
 
