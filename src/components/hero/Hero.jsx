@@ -9,13 +9,13 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   useGSAP(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".hero",
-        start: "top top",
-        // markers: true,
-      },
-    });
+    // const tl = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: ".hero",
+    //     start: "top top",
+    //     // markers: true,
+    //   },
+    // });
 
     gsap.from(".txt .title", {
       opacity: 0,

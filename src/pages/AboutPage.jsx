@@ -75,9 +75,9 @@ const AboutPage = () => {
           </p>
           <p>
             I work on freelance platforms like{" "}
-            <a target="_blank" href="#" className="link">Fiverr</a>,{" "}
-            <a target="_blank" href="#" className="link">Upwork</a>, and{" "}
-            <a target="_blank" href="#" className="link">Freelancer</a>, building real-world applications for clients worldwide.
+            <a target="_blank" href="https://www.fiverr.com/s/NNAXmWV" className="link">Fiverr</a>,{" "}
+            <a target="_blank" href="https://www.upwork.com/freelancers/~01b63512a1803ab468?mp_source=share" className="link">Upwork</a>, and{" "}
+            <a target="_blank" href="https://www.freelancer.com/u/SarahHerzAllah?frm=SarahHerzAllah&sb=t" className="link">Freelancer</a>, building real-world applications for clients worldwide.
           </p>
         </div>
         <div className="img-cont">

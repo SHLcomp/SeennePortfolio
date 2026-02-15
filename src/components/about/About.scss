@@ -18,7 +18,7 @@
 
             &:nth-child(1) {
                 transform: rotateY(180deg) !important;
-                filter: drop-shadow(10px 10px 30px var(--primary-color));
+                filter: drop-shadow(1px 1px 20px var(--primary-color));
             }
         }
     }

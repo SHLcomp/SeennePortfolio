@@ -16,7 +16,7 @@ const projects = [
     tech: ["React / vite", "SCSS", "GSAP"],
 
     demo: "https://lou-2.vercel.app/",
-    github: "https://lou-2.vercel.app/",
+    github: "https://github.com/SHLcomp/LOU2",
 
     features: [
       "Fully responsive design",
@@ -38,7 +38,7 @@ const projects = [
     tech: ["React", "SCSS", "GSAP"],
 
     demo: "https://lou-2.vercel.app/",
-    github: "https://lou-2.vercel.app/",
+    github: "https://github.com/SHLcomp/SeenneCuisine",
 
     features: [
       "Fully responsive design",
@@ -59,7 +59,7 @@ const projects = [
     tech: ["React / vite", "SCSS",],
 
     demo: "https://reval-world.vercel.app/",
-    github: "https://reval-world.vercel.app/",
+    github: "https://github.com/SHLcomp/reval-world",
 
     features: [
       "Fully responsive design",
@@ -79,8 +79,8 @@ const projects = [
     showcaseImg: img4sh,
     tech: ["React / vite", "SCSS", "GSAP"],
 
-    demo: "https://lou-2.vercel.app/",
-    github: "https://lou-2.vercel.app/",
+    demo: "https://lousample.vercel.app/",
+    github: "https://github.com/SHLcomp/LOU",
 
     features: [
       "Fully responsive design",

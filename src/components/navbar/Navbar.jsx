@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.scss";
 import { Link, useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("");
@@ -31,9 +32,9 @@ const Navbar = () => {
         <Link className="a" to={"/"}>
           <li className={menu === "home" ? "active" : ""}>Home</li>
         </Link>
-        <a href="#designs" className="a">
+        <HashLink to={"/#designs"} className="a">
           <li className={menu === "designs" ? "active" : ""}>Designs</li>
-        </a>
+        </HashLink>
         <Link to={"/about"} className="a">
           <li className={menu === "about" ? "active" : ""}>About</li>
         </Link>
