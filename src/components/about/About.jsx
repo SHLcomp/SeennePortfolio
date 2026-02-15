@@ -94,15 +94,15 @@ const About = () => {
           <p>
             Beyond the code, I’m a digital problem solver and storyteller. You
             can find me crafting projects on{" "}
-            <a href="#" className="link">
+            <a href="https://www.fiverr.com/s/NNAXmWV" className="link" target="_blank">
               Fiverr
             </a>
             ,{" "}
-            <a href="#" className="link">
+            <a href="https://www.upwork.com/freelancers/~01b63512a1803ab468?mp_source=share" className="link" target="_blank">
               Upwork
             </a>
             , and{" "}
-            <a href="#" className="link">
+            <a href="https://www.freelancer.com/u/SarahHerzAllah?frm=SarahHerzAllah&sb=t" className="link" target="_blank">
               Freelancer
             </a>
             , bringing visions to life one line of code at a time.
@@ -149,7 +149,7 @@ const About = () => {
               <h3>Lab of Learning</h3>
               <p>
                 At{" "}
-                <a href="https://www.meu.edu.jo/" className="link">
+                <a href="https://www.meu.edu.jo/" className="link" target="_blank">
                   Middle East University
                 </a>
                 , I explore the frontier of Intelligent Systems Engineering.
@@ -160,11 +160,11 @@ const About = () => {
               </p>
               <p>
                 Through scholarships at{" "}
-                <a href="https://htux.org/" className="link">
+                <a href="https://htux.org/" className="link" target="_blank">
                   HTUx
                 </a>{" "}
                 and guidance from mentors at{" "}
-                <a href="https://www.htu.edu.jo/" className="link">
+                <a href="https://www.htu.edu.jo/" className="link" target="_blank">
                   HTU
                 </a>
                 , I gain the insight and confidence to tackle real-world

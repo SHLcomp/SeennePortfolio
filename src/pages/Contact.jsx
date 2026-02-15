@@ -89,15 +89,15 @@ const Contact = () => {
           <div className="contact-info">
             <div className="info-item">
               <h4>Email</h4>
-              <a href="mailto:your@email.com">your@email.com</a>
+              <a href="mailto:sara12321@gmail.com?subject=Project Inquiry&body=Hello Sarah, I would like to discuss a project with you." target="_blank" rel="noopener noreferrer">sara12321@gmail.com</a> {/*Here ... it doesn't work*/}
             </div>
 
             <div className="info-item">
               <h4>Freelance Platforms</h4>
               <div className="links">
-                <a href="#">Fiverr</a>
-                <a href="#">Upwork</a>
-                <a href="#">Freelancer</a>
+                <a href="https://www.fiverr.com/s/NNAXmWV">Fiverr</a>
+                <a href="https://www.upwork.com/freelancers/~01b63512a1803ab468?mp_source=share">Upwork</a>
+                <a href="https://www.freelancer.com/u/SarahHerzAllah?frm=SarahHerzAllah&sb=t">Freelancer</a>
               </div>
             </div>
 

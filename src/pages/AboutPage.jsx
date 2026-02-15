@@ -95,13 +95,13 @@ const AboutPage = () => {
               <h3>My Journey</h3>
               <p>
                 I am a self-learner who has built my skills from scratch since
-                the age of 15. I received a scholarship from{" "}
+                2019. I received a scholarship from{" "}
                 <span>Al Hussein Technical University </span>
                 because of my programming abilities and self-learning
                 dedication.
                 <br />
                 <br />
-                I have also obtained six certifications in programming,
+                I have also obtained certifications in programming,
                 including certifications in frontend responsive web design and
                 full-stack web development.
                 <br />
@@ -120,11 +120,11 @@ const AboutPage = () => {
               <h3>Academic Education</h3>
               <p>
                 I am currently a student at the{" "}
-                <a href="https://www.meu.edu.jo/" className="link">
+                <a target="_blank" href="https://www.meu.edu.jo/" className="link">
                   MEU - Middle East University
                 </a>
                 , studying{" "}
-                <a
+                <a target="_blank"
                   href="https://www.meu.edu.jo/faculties/faculty-of-engineering/intelligent-systems-engineering/"
                   className="link"
                 >
@@ -142,11 +142,11 @@ const AboutPage = () => {
                 <br />
                 <br />
                 Later, I received a scholarship on the{" "}
-                <a href="https://htux.org/" className="link">
+                <a target="_blank" href="https://htux.org/" className="link">
                   HTUx
                 </a>{" "}
                 platform from{" "}
-                <a href="https://www.htu.edu.jo/" className="link">
+                <a target="_blank" href="https://www.htu.edu.jo/" className="link">
                   HTU - Al Hussein Technical University
                 </a>
                 . This opportunity allowed me to learn from experienced
@@ -224,7 +224,7 @@ const AboutPage = () => {
         </div>
 
         <div className="cer-item">
-          <a target="_blank" href="#" className="a">
+          <a target="_blank" href="https://www.credential.net/5bdbff59-dd19-4ceb-9065-c4cf23237f6c#acc.3AnbiBJ1" className="a">
             <h4>React</h4>
           </a>
           <div className="info">
