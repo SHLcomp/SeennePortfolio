@@ -4,9 +4,9 @@
   width: 100vw;
   padding-top: 13em;
   justify-content: space-between;
-  height: 200vh;
+  min-height: 100vh;
   // height: 100vh;
-  height: fit-content;
+  // height: fit-content;
 
   .txt {
     display: flex;
@@ -43,7 +43,7 @@
       display: flex;
       flex-direction: column;
       padding-top: 10vh;
-      height: 140vh;
+      height: fit-content;
       justify-content: space-between;
 
       .edu-item {
@@ -247,3 +247,152 @@
     }
   }
 }
+
+
+@media (max-width: 1024px)and (min-width:600px) {
+
+  .about {
+    padding-top: 8em;
+
+    /* HERO SECTION */
+    .txt {
+      gap: 2em;
+      padding-inline: 2em;
+
+      .txt-info {
+        width: 55vw;
+        font-size: 1.2em;
+      }
+
+      .img-cont {
+        width: 40vw;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    /* EDUCATION SECTION */
+    .edu {
+      margin-top: 10vw;
+
+      .text {
+        font-size: 1.3em;
+      }
+
+      .edu-cont {
+
+        /* IMPORTANT FIX */
+        height: fit-content;
+        gap: 6em;
+
+        .edu-item {
+
+          gap: 2em;
+
+          &::after {
+            width: 90%;
+          }
+
+          .info {
+            width: 55vw;
+            font-size: 1.2em;
+        padding-inline: 2em !important;
+          }
+
+          .img-cont {
+            width: 40vw;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) and (min-width: 600px) {
+
+  .about-page {
+
+    padding-top: 8em;
+
+    /* INTRO SECTION */
+    .txt {
+      gap: 2em;
+      padding-inline: 3em;
+
+      .txt-info {
+        width: 55vw;
+        font-size: 1.2em;
+      }
+
+      .img-cont {
+        width: 40vw;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    /* EDUCATION */
+    .edu {
+      margin-top: 10vw;
+
+      .text {
+        font-size: 1.3em;
+      }
+
+      .edu-cont {
+        gap: 6em;
+
+        .edu-item {
+
+          gap: 2em;
+
+          &::after {
+            width: 90%;
+          }
+
+          .info {
+            width: 55vw;
+            font-size: 1.2em;
+            padding-inline: 1.5em;
+          }
+
+          .img-cont {
+            width: 40vw;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+
+    /* CERTIFICATES */
+    .cer {
+
+      .text {
+        font-size: 1.3em;
+      }
+
+      .cer-item {
+        width: 75vw;
+        font-size: 0.95em;
+      }
+    }
+  }
+}
+
