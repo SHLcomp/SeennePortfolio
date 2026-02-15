@@ -89,7 +89,8 @@ const Contact = () => {
           <div className="contact-info">
             <div className="info-item">
               <h4>Email</h4>
-              <a href="mailto:sara12321@gmail.com?subject=Project Inquiry&body=Hello Sarah, I would like to discuss a project with you." target="_blank" rel="noopener noreferrer">sara12321@gmail.com</a> {/*Here ... it doesn't work*/}
+              <a href="mailto:sara12321b@gmail.com?subject=Project Inquiry&body=Hello Sarah, I would like to discuss a project with you." target="_blank" rel="noopener noreferrer">sara12321b@gmail.com</a>
+              {/* <a href="#" target="_blank" rel="noopener noreferrer">sara12321b@gmail.com</a> Here ... it doesn't work */}
             </div>
 
             <div className="info-item">
