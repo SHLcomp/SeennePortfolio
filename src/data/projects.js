@@ -37,7 +37,7 @@ const projects = [
     showcaseImg: img2sh,
     tech: ["React", "SCSS", "GSAP"],
 
-    demo: "https://lou-2.vercel.app/",
+    demo: "https://seenne-cuisine.vercel.app/",
     github: "https://github.com/SHLcomp/SeenneCuisine",
 
     features: [
