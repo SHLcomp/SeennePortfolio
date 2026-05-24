@@ -113,6 +113,27 @@ const projects = [
     workflow:
       "Started with UI research and wireframing, then developed responsive layout using React and SCSS, followed by performance optimization and animation using GSAP.",
   },
+  {
+    id: 6,
+    title: "Seenne care",
+    desc: "An e-commerce website that is dedicated to show skin care and makeup products in an attractive way.",
+    img: img4,
+    showcaseImg: img4sh,
+    tech: ["React / vite", "SCSS", "GSAP" ],
+
+    demo: "https://pet-lover-ruddy.vercel.app/",
+    github: "https://github.com/SHLcomp/LOU",
+
+    features: [
+      "Fully responsive design",
+      "Animated UI sections",
+      "SEO optimized",
+      "Sign in and login system"
+    ],
+
+    workflow:
+      "Started with UI research and wireframing, then developed responsive layout using React and SaSS, followed by performance optimization and animation using GSAP.",
+  },
 
 
 ];
