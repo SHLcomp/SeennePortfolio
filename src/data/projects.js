@@ -92,6 +92,29 @@ const projects = [
     workflow:
       "Started with UI research and wireframing, then developed responsive layout using React and SCSS, followed by performance optimization and animation using GSAP.",
   },
+  {
+    id: 5,
+    title: "Pet Lover | ",
+    desc: "A Pet Lifestyle & Education Blog || Hybrid Content Website 'Pet Care & Education Platform' for pet lovers, that provides general and specific information about each pet, that would help pet lovers during their research if either they are willing to adopt an animal, or they already own one, and want to know more.",
+    img: img4,
+    showcaseImg: img4sh,
+    tech: ["React / vite", "SCSS", "GSAP" ],
+
+    demo: "https://pet-lover-ruddy.vercel.app/",
+    github: "https://github.com/SHLcomp/LOU",
+
+    features: [
+      "Fully responsive design",
+      "Animated UI sections",
+      "SEO optimized",
+      "Sign in and login system"
+    ],
+
+    workflow:
+      "Started with UI research and wireframing, then developed responsive layout using React and SCSS, followed by performance optimization and animation using GSAP.",
+  },
+
+
 ];
 
 export default projects;
