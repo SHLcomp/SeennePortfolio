@@ -1,3 +1,10 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Macondo&display=swap");
+@font-face {
+  font-family: "exbed";
+  src: url("././fonts/Exbed.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,12 +32,7 @@ body {
     z-index: -1;
   }
 }
-/* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Macondo&display=swap");
-@font-face {
-  font-family: "exbed";
-  src: url("././fonts/Exbed.ttf");
-}
+
 /* shared styles */
 .a {
   color: var(--txt-color);
