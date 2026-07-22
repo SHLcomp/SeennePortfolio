@@ -6,6 +6,8 @@ import img3 from "../assets/3.jpg";
 import img3sh from "../assets/3sh.jpg";
 import img4 from "../assets/4.png";
 import img4sh from "../assets/4.png";
+import img5 from "../assets/SAS website image.jpg"
+import img5sh from "../assets/SAS image.png"
 const projects = [
   {
     id: 1,
@@ -22,14 +24,14 @@ const projects = [
       "Fully responsive design",
       "Animated UI sections",
       "SEO optimized",
-      "Contact form for reservations"
+      "Contact form for reservations",
     ],
 
     workflow:
       "Started with UI research and wireframing, then developed responsive layout using React and SCSS, followed by performance optimization and animation using GSAP.",
   },
 
-   {
+  {
     id: 2,
     title: "Cuisine Website",
     desc: "Modern responsive cuisine website with menu preview and animated features.",
@@ -56,7 +58,7 @@ const projects = [
     desc: "Modern responsive website for a contracting company with services preview and animated features, made in the Arabic language.",
     img: img3,
     showcaseImg: img3sh,
-    tech: ["React / vite", "SCSS",],
+    tech: ["React / vite", "SCSS"],
 
     demo: "https://reval-world.vercel.app/",
     github: "https://github.com/SHLcomp/reval-world",
@@ -65,7 +67,7 @@ const projects = [
       "Fully responsive design",
       "Animated UI sections",
       "SEO optimized",
-      "Contact form for advices and quotes"
+      "Contact form for advices and quotes",
     ],
 
     workflow:
@@ -86,7 +88,7 @@ const projects = [
       "Fully responsive design",
       "Animated UI sections",
       "SEO optimized",
-      "Contact form for reservations"
+      "Contact form for reservations",
     ],
 
     workflow:
@@ -98,7 +100,7 @@ const projects = [
     desc: "A Pet Lifestyle & Education Blog || Hybrid Content Website 'Pet Care & Education Platform' for pet lovers, that provides general and specific information about each pet, that would help pet lovers during their research if either they are willing to adopt an animal, or they already own one, and want to know more.",
     img: img4,
     showcaseImg: img4sh,
-    tech: ["React / vite", "SCSS", "GSAP" ],
+    tech: ["React / vite", "SCSS", "GSAP"],
 
     demo: "https://pet-lover-ruddy.vercel.app/",
     github: "https://github.com/SHLcomp/LOU",
@@ -107,7 +109,7 @@ const projects = [
       "Fully responsive design",
       "Animated UI sections",
       "SEO optimized",
-      "Sign in and login system"
+      "Sign in and login system",
     ],
 
     workflow:
@@ -119,7 +121,7 @@ const projects = [
     desc: "An e-commerce website that is dedicated to show skin care and makeup products in an attractive way.",
     img: img4,
     showcaseImg: img4sh,
-    tech: ["React / vite", "SCSS", "GSAP" ],
+    tech: ["React / vite", "SCSS", "GSAP"],
 
     demo: "https://pet-lover-ruddy.vercel.app/",
     github: "https://github.com/SHLcomp/LOU",
@@ -128,14 +130,33 @@ const projects = [
       "Fully responsive design",
       "Animated UI sections",
       "SEO optimized",
-      "Sign in and login system"
+      "Sign in and login system",
     ],
 
     workflow:
       "Started with UI research and wireframing, then developed responsive layout using React and SaSS, followed by performance optimization and animation using GSAP.",
   },
+  {
+    id: 7,
+    title: "Seenne Architecture Studio",
+    desc: "A luxury business/company website for architecture and interior design, made for a team that transforms their client's vision into a luxury building. The clients are usually people with significant budget.",
+    img: img5,
+    showcaseImg: img5sh,
+    tech: ["React / vite", "SCSS", "GSAP"],
 
+    demo: "https://seenne-architecture-studio.vercel.app/",
+    github: "https://github.com/SHLcomp/SeenneArchitectureStudio",
 
+    features: [
+      "Fully responsive design",
+      "Animated UI sections",
+      "SEO optimized",
+      "Video showcase of the projects",
+    ],
+
+    workflow:
+      "Started with complete research about the business, then wireframing and rough sketching the design, finally developing responsive layout using React and SASS, followed by performance optimization and animating the hero page's layout using GSAP.",
+  },
 ];
 
 export default projects;
