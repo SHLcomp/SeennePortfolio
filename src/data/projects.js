@@ -5,9 +5,10 @@ import img2sh from "../assets/2.png";
 import img3 from "../assets/3.jpg";
 import img3sh from "../assets/3sh.jpg";
 import img4 from "../assets/4.png";
-import img4sh from "../assets/4.png";
+import img4sh from "../assets/4sh.png";
 import img5 from "../assets/SAS website image.jpg"
-import img5sh from "../assets/SAS image.png"
+import img5sh from "../assets/SAS image.png";
+
 const projects = [
   {
     id: 1,
@@ -86,14 +87,15 @@ const projects = [
     github: "https://github.com/SHLcomp/SeenneCare",
 
     features: [
-      "Fully responsive design",
-      "Animated UI sections",
-      "SEO optimized",
-      "Authentication system",
-      "MongoDB database connections",
-      "User specific cart/checkout functionality",
-      "User reviews/rating options",
-      "Real time stock tracking/inventory management"
+      // "Fully responsive design",
+      "Animated UI section",
+      "Attention to details",
+      // "SEO optimized",
+      // "Authentication system",
+      // "MongoDB database connections",
+      // "User specific cart/checkout functionality",
+      // "User reviews/rating options",
+      // "Real time stock tracking/inventory management"
     ],
 
     workflow:
