@@ -6,7 +6,7 @@ import img3 from "../assets/3.jpg";
 import img3sh from "../assets/3sh.jpg";
 import img4 from "../assets/4.png";
 import img4sh from "../assets/4sh.png";
-import img5 from "../assets/SAS website image.jpg"
+import img5 from "../assets/SAS website image.jpg";
 import img5sh from "../assets/SAS image.png";
 
 const projects = [
@@ -28,8 +28,18 @@ const projects = [
       "Contact form for reservations",
     ],
 
+    // Business niche
+    industry: ["Consulting"],
+
+    // Type of website
+    type: "Business",
+
+    // Design style
+    style: ["Luxury", "Minimal", "Modern"],
+
     workflow:
       "Started with UI research and wireframing, then developed responsive layout using React and SCSS, followed by performance optimization and animation using GSAP.",
+    featured: true,
   },
 
   {
@@ -48,9 +58,18 @@ const projects = [
       "Animated UI sections",
       "SEO optimized",
     ],
+    // Business niche
+    industry: ["Restaurant"],
+
+    // Type of website
+    type: "Restaurant",
+
+    // Design style
+    style: ["Luxury", "Minimal", "Modern"],
 
     workflow:
       "Started with UI research and wireframing, then developed responsive layout using React and SCSS, followed by performance optimization and animation using GSAP.",
+      featured: true,
   },
 
   {
@@ -70,13 +89,22 @@ const projects = [
       "SEO optimized",
       "Contact form for advices and quotes",
     ],
+    // Business niche
+    industry: ["Construction"],
+
+    // Type of website
+    type: "Business",
+
+    // Design style
+    style: ["Luxury", "Minimal", "Modern"],
 
     workflow:
       "Started with UI research and wireframing, then developed responsive layout using React and SCSS, followed by performance optimization and animation using css keyframes.",
+      featured: true,
   },
 
   {
-    id: 6,
+    id: 4,
     title: "Seenne care",
     desc: "An e-commerce website that is dedicated to show skin care and makeup products in an attractive way.",
     img: img4,
@@ -98,11 +126,20 @@ const projects = [
       // "Real time stock tracking/inventory management"
     ],
 
+    // Business niche
+    industry: ["Beauty", "Skincare", "Cosmetics"],
+
+    // Type of website
+    type: "E-commerce",
+
+    // Design style
+    style: ["Luxury", "Minimal", "Modern"],
+
     workflow:
       "Started with UI research and wireframing, then developed responsive layout using React and SaSS, followed by performance optimization and animation using GSAP.",
   },
   {
-    id: 7,
+    id: 5,
     title: "Seenne Architecture Studio",
     desc: "A luxury business/company website for architecture and interior design, made for a team that transforms their client's vision into a luxury building. The clients are usually people with significant budget.",
     img: img5,
@@ -119,9 +156,20 @@ const projects = [
       "Video showcase of the projects",
     ],
 
+        // Business niche
+    industry: ["Architecture", "Interior Design"],
+
+    // Type of website
+    type: "Corporate",
+
+    // Design style
+    style: ["Luxury", "Minimal", "Modern"],
+
     workflow:
       "Started with complete research about the business, then wireframing and rough sketching the design, finally developing responsive layout using React and SASS, followed by performance optimization and animating the hero page's layout using GSAP.",
+      featured: true,
   },
+
 ];
 
 export default projects;

@@ -1,13 +1,12 @@
 import React from 'react'
-import projects from '../../data/projects'
 import './Project.scss';
 import { Link } from 'react-router-dom';
 
-const Project = () => {
+const Project = ({project}) => {
   return (
     <>
-        {projects.map((project, index) => (
-          <div className="card" key={index}>
+       
+          <div className="card">
             <Link to={`designs/${project.id}`}>
               {" "}
               <div className="img">
@@ -30,7 +29,6 @@ const Project = () => {
               </a>
             </div>
           </div>
-        ))}
     </>
   )
 }
