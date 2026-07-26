@@ -3,13 +3,12 @@ import { useLocation } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
 import "./ProjectDisplay.scss";
 
-const ProjectDisplay = ({proj}) => {
-
-  const {pathname} = useLocation();
-   useEffect(() => {
+const ProjectDisplay = ({ proj }) => {
+  const { pathname } = useLocation();
+  useEffect(() => {
     window.scrollTo({
       top: 0,
-      behavior: "instant"
+      behavior: "instant",
     });
   }, [pathname]);
 
@@ -18,12 +17,15 @@ const ProjectDisplay = ({proj}) => {
       <Navbar />
 
       <div className="projectDisplay">
-
         {/* HERO */}
         <div className="top">
           <div className="txt">
             <h1>{proj.title}</h1>
-            <p>{proj.desc}</p>
+            {Array.isArray(proj.desc) ? (
+              proj.desc.map((paragraph, i) => <p key={i}>{paragraph}</p>)
+            ) : (
+              <p>{proj.desc}</p>
+            )}
 
             <div className="btns">
               {proj.demo && (
@@ -71,10 +73,13 @@ const ProjectDisplay = ({proj}) => {
         {proj.workflow && (
           <section className="section">
             <h2>Development Workflow</h2>
-            <p>{proj.workflow}</p>
+            {Array.isArray(proj.workflow) ? (
+              proj.workflow.map((paragraph, i) => <p key={i}>{paragraph}</p>)
+            ) : (
+              <p>{proj.workflow}</p >
+            )}
           </section>
         )}
-
       </div>
     </>
   );

@@ -49,7 +49,9 @@
 /* Sections */
 .section {
   margin-bottom: 6vh;
-
+  p{
+    font-size: 20px;
+  }
   h2 {
     margin-bottom: 20px;
     color: var(--primary-color);

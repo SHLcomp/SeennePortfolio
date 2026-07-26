@@ -16,7 +16,7 @@ const Project = ({project}) => {
 
             <div className="info">
               <h2>{project.title}</h2>
-              <p>{project.desc}</p>
+              <p>{project.shortDesc}</p>
 
               <div className="tech">
                 {project.tech.map((t, i) => (
