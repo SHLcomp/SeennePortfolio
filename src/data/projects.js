@@ -8,6 +8,8 @@ import img4 from "../assets/4.png";
 import img4sh from "../assets/4sh.png";
 import img5 from "../assets/SAS website image.jpg";
 import img5sh from "../assets/SAS image.png";
+import img6sh from "../assets/SeenneCon.png";
+import img6 from "../assets/SeenneCon.jpg";
 
 const projects = [
   {
@@ -238,6 +240,64 @@ const projects = [
     ],
     featured: true,
   },
+  {
+  id: 6,
+
+  title: "SeenneCon",
+
+  shortDesc:
+    "A modern contracting and construction website designed to showcase the company's services, products, and projects while building trust with potential clients.",
+
+  desc: [
+    "SeenneCon is a concept website created for a contracting and construction company that needed a professional digital presence capable of communicating reliability, experience, and the quality of its work. The goal was to create a clear and confident experience that helps potential clients understand the company's capabilities and explore its services before making contact.",
+
+    "The website was designed around the idea that trust is especially important in the construction industry, where clients are often making significant investments and need confidence in the company they choose. Clean layouts, structured content, strong typography, and carefully selected imagery were used to create a professional identity while keeping the experience straightforward and easy to navigate.",
+
+    "Project and product discovery were central to the site's structure. Dedicated sections for services, products, completed projects, testimonials, and company information give visitors multiple ways to understand the business and evaluate its capabilities. Filtering options were introduced where appropriate to make larger collections of products and projects easier to explore.",
+
+    "The final interface was developed with React and SCSS using reusable components and data-driven content. Responsive layouts were carefully considered to ensure that the website remains practical and visually consistent across desktop, tablet, and mobile devices, while the component structure makes future updates and expansion easier to manage.",
+  ],
+
+  img: img6,
+
+  showcaseImg: img6sh,
+
+  tech: ["React / Vite", "SCSS", "Figma"],
+
+  demo: "https://seenne-con.vercel.app/",
+
+  github: "#",
+
+  features: [
+    "Fully responsive design",
+    "Project and product filtering",
+    "Project gallery",
+    "Services and product showcases",
+    "Testimonials section",
+    "Quote and contact form",
+  ],
+
+  // Business niche
+  industry: ["Contracting", "Construction"],
+
+  // Type of website
+  type: "Business",
+
+  // Design style
+  style: ["Minimal", "Modern", "Professional"],
+
+  workflow: [
+    "The project began with researching modern contracting and construction websites to understand how companies in the industry communicate reliability, experience, and the scope of their work. I focused on identifying the information potential clients are most likely to look for, including services, completed projects, products, company credibility, and clear ways to request a quotation.",
+
+    "Using these insights, I planned the site's structure around a clear browsing journey. The homepage introduces the company's identity and capabilities, while dedicated pages allow visitors to explore services, products, and projects in greater detail. The information architecture was designed to make important content easy to discover without overwhelming visitors with too much information at once.",
+
+    "The visual direction focused on creating a modern and confident identity that feels appropriate for the construction industry. Clean layouts, structured typography, generous spacing, and strong imagery were used to communicate professionalism and quality. The design was kept relatively minimal so that the company's projects, products, and services remain the primary focus.",
+
+    "The final website was developed with React and SCSS using reusable and data-driven components for products, projects, and other content. Filtering functionality was added to make larger collections easier to browse, while responsive styling ensured that the layouts, navigation, and content hierarchy remain consistent across different screen sizes.",
+  ],
+
+  featured: true,
+},
 ];
 
 export default projects;
