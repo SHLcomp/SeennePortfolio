@@ -158,53 +158,53 @@ const projects = [
     featured: true,
   },
 
-  // ID 4
-  {
-    id: 4,
-    title: "Seenne Care",
+  // // ID 4
+  // {
+  //   id: 4,
+  //   title: "Seenne Care",
 
-    shortDesc:
-      "A luxury skincare and cosmetics e-commerce concept designed to present beauty products through an attractive, polished, and interactive shopping experience.",
+  //   shortDesc:
+  //     "A luxury skincare and cosmetics e-commerce concept designed to present beauty products through an attractive, polished, and interactive shopping experience.",
 
-    desc: [
-      "Seenne Care is an e-commerce concept created for a skincare and cosmetics brand that wanted to present its products through a visually rich and premium digital experience. The goal was to make the products feel desirable while creating a clean interface that allows customers to browse and discover products naturally.",
+  //   desc: [
+  //     "Seenne Care is an e-commerce concept created for a skincare and cosmetics brand that wanted to present its products through a visually rich and premium digital experience. The goal was to make the products feel desirable while creating a clean interface that allows customers to browse and discover products naturally.",
 
-      "The design combines a warm luxury aesthetic with clear product presentation. Rather than treating the website as a simple product catalogue, the interface uses visual hierarchy, spacing, typography, and animation to create a stronger sense of brand identity around the products.",
+  //     "The design combines a warm luxury aesthetic with clear product presentation. Rather than treating the website as a simple product catalogue, the interface uses visual hierarchy, spacing, typography, and animation to create a stronger sense of brand identity around the products.",
 
-      "Product discovery was a central part of the experience. Categories, product information, and filtering concepts were structured to help users narrow down what they are looking for while maintaining an engaging browsing experience. Small visual details and interactions were used to make the interface feel more polished and responsive.",
+  //     "Product discovery was a central part of the experience. Categories, product information, and filtering concepts were structured to help users narrow down what they are looking for while maintaining an engaging browsing experience. Small visual details and interactions were used to make the interface feel more polished and responsive.",
 
-      "The project was developed with React and SCSS, with GSAP used for animation and interaction. The architecture was structured around reusable components and product data so the interface could be expanded into a larger e-commerce application as additional functionality is introduced.",
-    ],
+  //     "The project was developed with React and SCSS, with GSAP used for animation and interaction. The architecture was structured around reusable components and product data so the interface could be expanded into a larger e-commerce application as additional functionality is introduced.",
+  //   ],
 
-    img: img4,
-    showcaseImg: img4sh,
-    tech: ["React / Vite", "SCSS", "GSAP", "MERN / Full Stack"],
+  //   img: img4,
+  //   showcaseImg: img4sh,
+  //   tech: ["React / Vite", "SCSS", "GSAP", "MERN / Full Stack"],
 
-    demo: "https://seenne-care.vercel.app/",
-    github: "https://github.com/SHLcomp/SeenneCare",
+  //   demo: "https://seenne-care.vercel.app/",
+  //   github: "https://github.com/SHLcomp/SeenneCare",
 
-    features: [
-      "Responsive e-commerce interface",
-      "Animated UI sections",
-      "Product filtering",
-      "Interactive product presentation",
-      "Attention to visual details",
-    ],
+  //   features: [
+  //     "Responsive e-commerce interface",
+  //     "Animated UI sections",
+  //     "Product filtering",
+  //     "Interactive product presentation",
+  //     "Attention to visual details",
+  //   ],
 
-    industry: ["Beauty", "Skincare", "Cosmetics"],
-    type: "E-commerce",
-    style: ["Luxury", "Minimal", "Modern"],
+  //   industry: ["Beauty", "Skincare", "Cosmetics"],
+  //   type: "E-commerce",
+  //   style: ["Luxury", "Minimal", "Modern"],
 
-    workflow: [
-      "The project began with researching modern skincare and cosmetics brands to understand how premium beauty companies present products and establish a strong visual identity online. I focused particularly on product discovery, visual hierarchy, and the elements that contribute to a luxury shopping experience.",
+  //   workflow: [
+  //     "The project began with researching modern skincare and cosmetics brands to understand how premium beauty companies present products and establish a strong visual identity online. I focused particularly on product discovery, visual hierarchy, and the elements that contribute to a luxury shopping experience.",
 
-      "The site's structure and wireframes were then planned around the shopping journey, from discovering the brand and browsing products to narrowing down products through categories and filters. The goal was to keep product discovery simple while giving the brand enough visual space to establish its identity.",
+  //     "The site's structure and wireframes were then planned around the shopping journey, from discovering the brand and browsing products to narrowing down products through categories and filters. The goal was to keep product discovery simple while giving the brand enough visual space to establish its identity.",
 
-      "The visual design combines warm tones, elegant typography, spacious layouts, product-focused imagery, and subtle interactions to create a refined beauty aesthetic. GSAP was used to enhance key sections and transitions without allowing animation to overpower the products themselves.",
+  //     "The visual design combines warm tones, elegant typography, spacious layouts, product-focused imagery, and subtle interactions to create a refined beauty aesthetic. GSAP was used to enhance key sections and transitions without allowing animation to overpower the products themselves.",
 
-      "The interface was developed with React and SCSS using reusable product and UI components. Product data and filtering logic were structured with future e-commerce expansion in mind, while GSAP was integrated for the final interaction and animation layer.",
-    ],
-  },
+  //     "The interface was developed with React and SCSS using reusable product and UI components. Product data and filtering logic were structured with future e-commerce expansion in mind, while GSAP was integrated for the final interaction and animation layer.",
+  //   ],
+  // },
   {
     id: 5,
     title: "Seenne Architecture Studio",
